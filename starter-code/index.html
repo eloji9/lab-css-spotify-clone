@@ -3,121 +3,196 @@
 <head>
   <meta charset="UTF-8">
   <title>Spotify</title>
-  <link rel="stylesheet" href="./css/main.css">
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400" rel="stylesheet"/>
+  <link rel="stylesheet" href="./css/main.css" />
 </head>
+
 <body>
-  <!-- <header>
-    <div class="imageLogo">
-      <img src="../starter-code/images/spotify-logo.png" alt="spotify logo">
-    </div>
-    <div class="navigator">
-        <div><a href="premium.html">Premium</a></div>
-        <div><a href="discover.html">Discover</a></div>
-        <div><a href="help.html">Help</a></div>
-        <div><a href="download.html">Download</a></div>
-    </div>
-  </header> -->
+
   <header>
-    <div>
-      <img class = "spotify-logo" src="./images/spotify-logo.png" alt="spotify-logo">
-    </div>
-    <div>
-      <nav class="containerTop">
-          <div><a href="premium.html">Premium</a></div>
-          <div><a href="discover.html">Discover</a></div>
-          <div><a href="help.html">Help</a></div>
-          <div><a href="download.html">Download</a></div>
-        </nav>
-      </div>
+    <img class = "spotify-logo" src="./images/spotify-logo.png" alt="spotify-logo">
+    <nav class="containerTop">
+        <a href="premium.html">Premium</a>
+        <a href="discover.html">Discover</a>
+        <a href="help.html">Help</a>
+        <a href="download.html">Download</a>
+      </nav>
   </header>
+
   <section class = "section1">
+    <div>
       <h1>
-        Music for everyone.
+          Music for everyone.
       </h1>
-      <p class = "textTitle">
+      <p>
         Spotify is now free on mobile, tablet and computer.
-      </p>
-      <p class = "textTitle">
+      <br/>
         Listen to the right music, wherever you are.
       </p>
+    </div>
   </section>
 
-  <section class="whatsIn">
-    <div class="textWhatsIn">
-        <h2>What’s on Spotify?</h2>
-    </div>
+  <section class="section2">
 
-    <div class="whatsInSongs">
-      <div class="songSong1">
-        <div class="millionSongs">
-          <img src="./images/music-icon.png" width= "150vw" alt="music">
-          <h3>
-            Millions of Songs
-          </h3>
-          <p>There are millions of</p>
-          <p>songs on Spotify</p>
-        </div>
-        <div class="millionSongs">
-          <img src="./images/high-quality-icon.png" width= "150vw" alt="high high-quality-icon">
-          <h3>
-            HD Music
-          </h3>
-          <p>Listen to music as if you</p>
-          <p>were listening live</p>
-        </div>
-        <div class="millionSongs">
-          <img src="./images/devices-icon.png" width= "150vw" alt="devices-icon">
-          <h3>
-            Stream Everywhere
-          </h3>
-          <p>Stream music on your</p>
-          <p>smartphone, tablet or</p>
-          <p>computer</p>
-        </div>
-      </div>
-    </div>
+        <h2>What’s on Spotify?</h2>
+
+        <ul>
+          <li>
+            <img src="./images/music-icon.png" alt="music-icon" />
+              <h3>
+                Millions of Songs
+              </h3>
+              <p>There are millions of
+              <br/>
+              songs on Spotify</p>
+          </li>
+          <li>
+            <img src="./images/high-quality-icon.png" alt="high-quality-icon" />
+            <h3>
+              HD Music
+            </h3>
+            <p>Listen to music as if you
+            <br/>
+            were listening live</p>
+          </li>
+          <li>
+            <img src="./images/devices-icon.png" alt="device-icon" />
+            <h3>
+              Stream Everywhere
+            </h3>
+            <p>Stream music on your
+            <br/>
+            smartphone, tablet or
+            <br/>
+            computer</p>
+          </li>
+        </ul>
+
     </section>
 
-    <section class="bottomPart">
-      <!-- <div class="spotifyApp">
-        <img src="./images/spotify-app.jpg" alt="spotify-app">
-      </div>
-      <div class="spotifyIconWhite">
-          <img src="./images/spotify-icon-white.png" alt="spotify-icon-white">
-      </div> -->
+    <section class="section3">
       <div>
-        <div>
-          <h2>
+        <h2>
             It’s as yeezy as Kanye West.
-          </h2>
-        </div>
-        <div class= allKaneyParts>
-          <div class="kanyePart">
+        </h2>
+        <ul>
+          <li>
             <h3>
               Search
             </h3>
-            <p>Know what you want to listen to?</p>
-            <p>Just search and hit play.</p>
-          </div>
-          <div class="kanyePart">
+            <p>Know what you want to listen to?
+              <br/>
+            Just search and hit play.</p>
+          </li>
+
+          <li>
             <h3>
               Browse
             </h3>
-            <p>Check out the latest charts,</p>
-            <p>brand new releases and great</p>
-            <p>playlists for right now.</p>
-          </div>
-          <div class="kanyePart">
+              <p>Check out the latest charts,
+              <br/>
+              brand new releases and great
+              <br/>
+              playlists for right now.</p>
+          </li>
+
+          <li>
             <h3>
               Discover
             </h3>
-            <p>Enjoy new music every Monday</p>
-            <p>with your own personal playlist.</p>
-            <p>Or sit back and enjoy Radio.</p>
-          </div>
-        </div>
+              <p>Enjoy new music every Monday
+              <br/>
+              with your own personal playlist.
+              <br/>
+              Or sit back and enjoy Radio.</p>
+          </li>
+        </ul>
+
       </div>
+      <img src="./images/spotify-app.jpg" alt="spotify-app"/>
     </section>
-  </section>
+
 </body>
+<script>
+  console.log("Hello");
+  var a = "Bonjour";
+
+  function checkName(name, cb){
+    if (name[0].toLowerCase()=== name[0]){
+      throw new Error("Names should start with an upper case letter");
+    }
+    cb(name);
+  }
+
+function displayName(){
+  console.log("Hello", name);
+}
+checkName("Martin", displayName);
+
+
+
+function forLoop(cb, i){
+  if (i>0 && i%2===0){
+    console.log(cb, i)
+    forLoop(cb, i-2)
+  }
+  cb()
+}
+forLoop("Andrea", 20);
+
+
+function forLoop(name, i){
+  if (i>0 && i%2===0){
+    console.log(name, i)
+    forLoop(name, i-2)
+  }
+  else if (i>0){
+    console.log(name, i-1)
+    forLoop(name, i-2)
+  }
+}
+forLoop("Martin", 10);
+
+
+// console.log("Hello");
+// DBCall(function(response){
+//   console.log("Result", response);
+// });
+// console.log("Bye");
+
+var timeoutId = setTimeout(function () {
+  console.log("Hey there, Ironhackers!");
+}, 1000);
+var timeoutId = setTimeout(function () {
+  console.log("Hey there, Ironhackers 2!");
+}, 2000);
+var timeoutId = setTimeout(function () {
+  console.log("Hey there, Ironhackers 3!");
+}, 100);
+var timeoutId = setTimeout(function () {
+  console.log("Hey there, Ironhackers 4!");
+}, 500);
+
+
+// function forLoop2(name, i){
+//   if (i>0 && i%2===0){
+//     console.log(name)
+//     forLoop2(name,i-1)
+//   }
+// }
+// forLoop2("Adrian", 10);
+  // try{
+  //   checkName ("Martin");
+  //   } catch(error){
+  //     console.log(error);
+  // }
+
+  // try{
+  //   checkName ("martin");
+  //   } catch(error){
+  //     console.log("Deuxieme",error);
+  // }
+  // console.log("Okey");
+
+</script>
 </html>
