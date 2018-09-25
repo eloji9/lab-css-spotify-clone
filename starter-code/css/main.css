@@ -54,6 +54,7 @@ header a:hover {
     align-items: center;
     text-align: center;
     background-image: url("../images/landing.jpg");
+    /* background-image: url(../images/landing.jpg); */
     background-size: cover;
     background-position: bottom;
     height: 768px;
@@ -135,3 +136,9 @@ header a:hover {
 .section3 img {
     width: 30%;
 }
+
+.section3 ul p{
+    font-size: 20px;
+    width: 300px;
+}
+
